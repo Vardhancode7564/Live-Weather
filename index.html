@@ -188,7 +188,7 @@
 
       async function fetchAQIData(lat, lon) {
         let fetchAQIData = await fetch(
-          `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=32d9ead3ff575c987a2240b99c845f96`
+          `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=32d9ead3ff575c987a2240b99c845f96`
         );
         let formattedData = await fetchAQIData.json();
         console.log("AQI Data: ", formattedData);
